@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Политика конфиденциальности - Image Size Picker</title>
+    <title>Privacy Policy — Image Size Picker</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -31,9 +31,12 @@
             margin-top: 30px;
             margin-bottom: 15px;
         }
-        p {
-            margin-bottom: 15px;
+        p, li {
+            margin-bottom: 12px;
             color: #555;
+        }
+        ul {
+            padding-left: 24px;
         }
         .highlight {
             background: #f0f7ff;
@@ -46,75 +49,167 @@
             font-size: 14px;
             margin-bottom: 20px;
         }
+        .lang-switch {
+            margin-bottom: 24px;
+            font-size: 14px;
+        }
+        .lang-switch a {
+            color: #4A90E2;
+            text-decoration: none;
+            margin-right: 16px;
+        }
+        .lang-switch a:hover {
+            text-decoration: underline;
+        }
+        hr.section {
+            margin: 48px 0;
+            border: none;
+            border-top: 1px solid #ddd;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Политика конфиденциальности</h1>
-        <p class="date">Последнее обновление: 16 декабря 2024 г.</p>
-        
-        <h2>Общая информация</h2>
-        <p>
-            Image Size Picker — это расширение для браузера Chrome, предназначенное для измерения размеров изображений на веб-страницах. 
-            Мы серьёзно относимся к защите вашей конфиденциальности.
+        <p class="lang-switch">
+            <a href="#ru">Русский</a>
+            <a href="#en">English</a>
         </p>
-        
-        <div class="highlight">
-            <strong>Важно:</strong> Image Size Picker не собирает, не хранит и не передаёт никакие персональные данные пользователей.
-        </div>
-        
-        <h2>Какие данные мы собираем?</h2>
-        <p>
-            <strong>Никаких.</strong> Расширение не собирает никакие персональные данные, данные о вашей активности в интернете, 
-            информацию о посещаемых сайтах или любые другие данные.
-        </p>
-        
-        <h2>Локальное хранение</h2>
-        <p>
-            Расширение использует <code>chrome.storage.sync</code> только для сохранения одной настройки:
-        </p>
-        <ul>
-            <li>Состояние режима измерения (включён/выключен)</li>
-        </ul>
-        <p>
-            Эта информация хранится локально в вашем браузере и синхронизируется между вашими устройствами через аккаунт Google, 
-            если вы используете синхронизацию Chrome. Данные не отправляются на внешние серверы.
-        </p>
-        
-        <h2>Обработка данных на страницах</h2>
-        <p>
-            Расширение работает полностью локально в вашем браузере:
-        </p>
-        <ul>
-            <li>Измеряет размеры изображений на странице, которую вы просматриваете</li>
-            <li>Получает размер файла изображения через HTTP-запрос (только для отображения в tooltip)</li>
-            <li>Все данные обрабатываются локально и не сохраняются</li>
-            <li>Никакая информация не отправляется на внешние серверы</li>
-        </ul>
-        
-        <h2>Сторонние сервисы</h2>
-        <p>
-            Расширение не использует сторонние аналитические сервисы, рекламные сети или любые другие сервисы, 
-            которые могли бы собирать данные о вас.
-        </p>
-        
-        <h2>Изменения в политике конфиденциальности</h2>
-        <p>
-            Если мы внесём изменения в эту политику конфиденциальности, мы обновим дату "Последнее обновление" в начале документа.
-        </p>
-        
-        <h2>Контакты</h2>
-        <p>
-            Если у вас есть вопросы о политике конфиденциальности, пожалуйста, свяжитесь с нами через 
-            <a href="https://chrome.google.com/webstore" target="_blank">Chrome Web Store</a> (раздел поддержки расширения).
-        </p>
-        
-        <hr style="margin: 40px 0; border: none; border-top: 1px solid #ddd;">
-        
+
+        <section id="ru">
+            <h1>Политика конфиденциальности</h1>
+            <p class="date">Последнее обновление: 23 мая 2026 г.</p>
+
+            <h2>Общая информация</h2>
+            <p>
+                Image Size Picker — расширение для Google Chrome, которое показывает размеры изображений на веб-страницах.
+                Мы не собираем персональные данные пользователей.
+            </p>
+
+            <div class="highlight">
+                <strong>Важно:</strong> расширение не отправляет данные о вашем просмотре на наши серверы.
+                Вся работа выполняется локально в браузере.
+            </div>
+
+            <h2>Какие данные мы собираем</h2>
+            <p><strong>Никаких.</strong> Мы не собираем имя, email, историю просмотра, список сайтов или другую персональную информацию.</p>
+
+            <h2>Локальное хранение</h2>
+            <p>Расширение использует <code>chrome.storage.sync</code> только для одной настройки:</p>
+            <ul>
+                <li>включён или выключен режим измерения</li>
+            </ul>
+            <p>
+                Эта настройка хранится в Chrome и может синхронизироваться между вашими устройствами через аккаунт Google,
+                если у вас включена синхронизация Chrome.
+            </p>
+
+            <h2>Обработка данных на страницах</h2>
+            <p>Когда вы используете расширение, оно локально:</p>
+            <ul>
+                <li>определяет изображения на открытой странице</li>
+                <li>показывает их размеры в интерфейсе расширения</li>
+                <li>может запросить размер файла изображения по его URL, чтобы показать вес в KB/MB</li>
+            </ul>
+            <p>
+                Эти запросы идут напрямую к сайту, на котором находится изображение.
+                Мы не получаем и не сохраняем эти данные на своих серверах.
+            </p>
+
+            <h2>Разрешения расширения</h2>
+            <ul>
+                <li><code>storage</code> — сохранить состояние режима измерения</li>
+                <li><code>activeTab</code> — работать с активной вкладкой</li>
+                <li><code>&lt;all_urls&gt;</code> — находить и измерять изображения на любых сайтах, которые вы открываете</li>
+            </ul>
+
+            <h2>Сторонние сервисы</h2>
+            <p>
+                Расширение не использует аналитику, рекламные сети и другие сервисы сбора данных.
+            </p>
+
+            <h2>Изменения политики</h2>
+            <p>
+                Если политика изменится, мы обновим дату в начале этой страницы.
+            </p>
+
+            <h2>Контакты</h2>
+            <p>
+                По вопросам конфиденциальности обращайтесь через страницу расширения в
+                <a href="https://chromewebstore.google.com/" target="_blank" rel="noopener noreferrer">Chrome Web Store</a>.
+            </p>
+        </section>
+
+        <hr class="section">
+
+        <section id="en">
+            <h1>Privacy Policy</h1>
+            <p class="date">Last updated: May 23, 2026</p>
+
+            <h2>Overview</h2>
+            <p>
+                Image Size Picker is a Google Chrome extension that displays image dimensions on web pages.
+                We do not collect personal user data.
+            </p>
+
+            <div class="highlight">
+                <strong>Important:</strong> the extension does not send your browsing data to our servers.
+                All processing happens locally in your browser.
+            </div>
+
+            <h2>Data we collect</h2>
+            <p><strong>None.</strong> We do not collect your name, email, browsing history, visited sites, or other personal information.</p>
+
+            <h2>Local storage</h2>
+            <p>The extension uses <code>chrome.storage.sync</code> for one setting only:</p>
+            <ul>
+                <li>whether measurement mode is enabled or disabled</li>
+            </ul>
+            <p>
+                This setting is stored in Chrome and may sync across your devices through your Google account
+                if Chrome sync is enabled.
+            </p>
+
+            <h2>On-page processing</h2>
+            <p>When you use the extension, it locally:</p>
+            <ul>
+                <li>detects images on the page you are viewing</li>
+                <li>displays their dimensions in the extension UI</li>
+                <li>may request an image file size from its URL to show weight in KB/MB</li>
+            </ul>
+            <p>
+                These requests go directly to the website hosting the image.
+                We do not receive or store this data on our servers.
+            </p>
+
+            <h2>Extension permissions</h2>
+            <ul>
+                <li><code>storage</code> — save measurement mode state</li>
+                <li><code>activeTab</code> — interact with the active tab</li>
+                <li><code>&lt;all_urls&gt;</code> — find and measure images on sites you open</li>
+            </ul>
+
+            <h2>Third-party services</h2>
+            <p>
+                The extension does not use analytics, ad networks, or other data collection services.
+            </p>
+
+            <h2>Policy changes</h2>
+            <p>
+                If this policy changes, we will update the date at the top of this page.
+            </p>
+
+            <h2>Contact</h2>
+            <p>
+                For privacy questions, contact us through the extension page in the
+                <a href="https://chromewebstore.google.com/" target="_blank" rel="noopener noreferrer">Chrome Web Store</a>.
+            </p>
+        </section>
+
+        <hr class="section">
+
         <p style="color: #888; font-size: 14px; text-align: center;">
-            © 2024 Image Size Picker. Все права защищены.
+            © 2026 Image Size Picker
         </p>
     </div>
 </body>
 </html>
-
